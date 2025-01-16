@@ -1,0 +1,1 @@
+{"columns":[{"kind":"Default","name":"created_at","num_defaults":0,"num_rows":30},{"kind":"Sparse","name":"error","num_defaults":30,"num_rows":30},{"kind":"Default","name":"migration_id","num_defaults":0,"num_rows":30},{"kind":"Default","name":"status","num_defaults":0,"num_rows":30},{"kind":"Default","name":"updated_at","num_defaults":0,"num_rows":30}],"version":0}

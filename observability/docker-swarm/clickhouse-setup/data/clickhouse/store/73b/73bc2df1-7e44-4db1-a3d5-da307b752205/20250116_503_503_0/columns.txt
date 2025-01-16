@@ -1,0 +1,6 @@
+columns format version: 1
+4 columns:
+`trace_id` String
+`start` SimpleAggregateFunction(min, DateTime64(9))
+`end` SimpleAggregateFunction(max, DateTime64(9))
+`num_spans` SimpleAggregateFunction(sum, UInt64)

@@ -1,0 +1,14 @@
+columns format version: 1
+12 columns:
+`temporality` LowCardinality(String)
+`metric_name` LowCardinality(String)
+`description` String
+`unit` LowCardinality(String)
+`type` LowCardinality(String)
+`is_monotonic` Bool
+`attr_name` LowCardinality(String)
+`attr_type` LowCardinality(String)
+`attr_datatype` LowCardinality(String)
+`attr_string_value` String
+`first_reported_unix_milli` SimpleAggregateFunction(min, UInt64)
+`last_reported_unix_milli` SimpleAggregateFunction(max, UInt64)

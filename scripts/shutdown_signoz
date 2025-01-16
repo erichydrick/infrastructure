@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker stack rm signoz
+sleep 3
+docker stack services signoz

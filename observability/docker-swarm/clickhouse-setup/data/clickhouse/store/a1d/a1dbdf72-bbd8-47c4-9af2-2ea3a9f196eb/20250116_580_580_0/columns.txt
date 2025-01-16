@@ -1,0 +1,12 @@
+columns format version: 1
+10 columns:
+`env` LowCardinality(String)
+`temporality` LowCardinality(String)
+`metric_name` LowCardinality(String)
+`fingerprint` UInt64
+`unix_milli` Int64
+`last` SimpleAggregateFunction(anyLast, Float64)
+`min` SimpleAggregateFunction(min, Float64)
+`max` SimpleAggregateFunction(max, Float64)
+`sum` SimpleAggregateFunction(sum, Float64)
+`count` SimpleAggregateFunction(sum, UInt64)

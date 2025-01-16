@@ -1,0 +1,8 @@
+columns format version: 1
+6 columns:
+`unix_milli` Int64
+`tag_key` String
+`tag_type` LowCardinality(String)
+`tag_data_type` LowCardinality(String)
+`string_value` String
+`number_value` Nullable(Float64)

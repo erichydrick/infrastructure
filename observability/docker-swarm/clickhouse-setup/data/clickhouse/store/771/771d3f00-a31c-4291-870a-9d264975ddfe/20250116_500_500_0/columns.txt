@@ -1,0 +1,42 @@
+columns format version: 1
+40 columns:
+`ts_bucket_start` UInt64
+`resource_fingerprint` String
+`timestamp` DateTime64(9)
+`trace_id` FixedString(32)
+`span_id` String
+`trace_state` String
+`parent_span_id` String
+`flags` UInt32
+`name` LowCardinality(String)
+`kind` Int8
+`kind_string` String
+`duration_nano` UInt64
+`status_code` Int16
+`status_message` String
+`status_code_string` String
+`attributes_string` Map(LowCardinality(String), String)
+`attributes_number` Map(LowCardinality(String), Float64)
+`attributes_bool` Map(LowCardinality(String), Bool)
+`resources_string` Map(LowCardinality(String), String)
+`events` Array(String)
+`links` String
+`response_status_code` LowCardinality(String)
+`external_http_url` LowCardinality(String)
+`http_url` LowCardinality(String)
+`external_http_method` LowCardinality(String)
+`http_method` LowCardinality(String)
+`http_host` LowCardinality(String)
+`db_name` LowCardinality(String)
+`db_operation` LowCardinality(String)
+`has_error` Bool
+`is_remote` LowCardinality(String)
+`resource_string_service$$name` LowCardinality(String)
+`attribute_string_http$$route` LowCardinality(String)
+`attribute_string_messaging$$system` LowCardinality(String)
+`attribute_string_messaging$$operation` LowCardinality(String)
+`attribute_string_db$$system` LowCardinality(String)
+`attribute_string_rpc$$system` LowCardinality(String)
+`attribute_string_rpc$$service` LowCardinality(String)
+`attribute_string_rpc$$method` LowCardinality(String)
+`attribute_string_peer$$service` LowCardinality(String)
